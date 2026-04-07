@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="HINT: Composed Image Retrieval with Dual-Path Compositional Contextualized Network">
+  <meta property="og:title"
+    content="HINT: Composed Image Retrieval with Dual-Path Compositional Contextualized Network" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title"
+    content="HINT: Composed Image Retrieval with Dual-Path Compositional Contextualized Network">
+  <meta name="twitter:description"
+    content="HINT: Composed Image Retrieval with Dual-Path Compositional Contextualized Network">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card"
+    content="HINT: Composed Image Retrieval with Dual-Path Compositional Contextualized Network">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="HINT: Composed Image Retrieval with Dual-Path Compositional Contextualized Network">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>HINT: Composed Image Retrieval with Dual-Path Compositional Contextualized Network</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More Research
+          </a>
+          <div class="navbar-dropdown research-dropdown">
+
+            <div class="navbar-item task-label">CIR</div>
+            <a class="navbar-item" href="https://lee-zixu.github.io/ENCODER.github.io/">
+              ENCODER (AAAI'25)
+            </a>
+            <a class="navbar-item" href="https://zivchen-ty.github.io/OFFSET.github.io/">
+              OFFSET (ACM MM'25)
+            </a>
+            <a class="navbar-item" href="https://windlikeo.github.io/MEDIAN.github.io/">
+              MEDIAN (ICASSP'25)
+            </a>
+            <a class="navbar-item" href="https://zhihfu.github.io/PAIR.github.io/">
+              PAIR (ICASSP'25)
+            </a>
+
+            <hr class="navbar-divider">
+
+            <div class="navbar-item task-label">CVR</div>
+            <a class="navbar-item" href="https://zivchen-ty.github.io/HUD.github.io/">
+              HUD (ACM MM'25)
+            </a>
+            <a class="navbar-item" href="https://lee-zixu.github.io/ReTrack.github.io/">
+              ReTrack (AAAI'26)
+            </a>
+            <a class="navbar-item" href="https://lee-zixu.github.io/REFINE.github.io/">
+              REFINE (TOMM'26)
+            </a>
+
+            <hr class="navbar-divider">
+
+            <div class="navbar-item task-label">NoisyCIR</div>
+            <a class="navbar-item" href="https://lee-zixu.github.io/HABIT.github.io/">
+              HABIT (AAAI'26)
+            </a>
+            <a class="navbar-item" href="https://zivchen-ty.github.io/INTENT.github.io/">
+              INTENT (AAAI'26)
+            </a>
+            <a class="navbar-item" href="https://zhihfu.github.io/Air-Know.github.io/">
+              Air-Know (CVPR'26)
+            </a>
+            <a class="navbar-item" href="https://lee-zixu.github.io/ConeSep.github.io/">
+              ConeSep (CVPR'26)
+            </a>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">[ICASSP'26] HINT: Composed Image Retrieval with Dual-Path
+              Compositional Contextualized Network</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <!--               <sup>*</sup> -->
+              <!-- <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Zhiwei Chen<sup>1</sup></a>,</span> -->
+              <span class="author-block" style="font-weight: 1000;">
+                <a href="https://zh-mingyu.github.io/" target="_blank" class="author-link">Mingyu
+                  Zhang<sup>1</sup></a>,
+              </span>
+              <span class="author-block" style="font-weight: 1000;">
+                <a href="https://lee-zixu.github.io/" target="_blank" class="author-link">Zixu Li<sup>1</sup></a>,
+              </span>
+              <span class="author-block" style="font-weight: 1000;">
+                <a href="https://zivchen-ty.github.io/" target="_blank" class="author-link">Zhiwei
+                  Chen<sup>1</sup></a>,
+              </span>
+              <span class="author-block" style="font-weight: 1000;">
+                <a href="https://zhihfu.github.io/" target="_blank" class="author-link">Zhiheng Fu<sup>1</sup></a>,
+              </span>
+              <span class="author-block" style="font-weight: 1000;">
+                <span>Xiaowei Zhu<sup>1</sup></span>,
+              </span>
+              <span class="author-block" style="font-weight: 1000;">
+                <span>Jiajia Nie<sup>1</sup></span>,
+              </span>
+              <span class="author-block" style="font-weight: 1000;">
+                <a href="https://weiyinwei.github.io/" target="_blank" class="author-link">Yinwei Wei<sup>1</sup></a>,
+              </span>
+              <span class="author-block" style="font-weight: 1000;">
+                <a href="https://faculty.sdu.edu.cn/huyupeng1/zh_CN/index.htm" target="_blank"
+                  class="author-link">Yupeng Hu<sup>1<sup>*</sup></sup></a>,
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>School of Software, Shandong University
+              </span>
+              <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding author.</small></span>
+
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2603.26341" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href="https://github.com/iLearn-Lab/ICASSP26-HINT" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-google-drive"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <div class="item">
+              <div class="columns is-centered has-text-centered">
+                <div class="column is-fifths-fifths">
+                  <!-- Your image here -->
+                  <img src="static/images/Abstract.png" alt="MY ALT TEXT" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+  <!-- <section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            [Abstract to be added here]
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-three-fifths">
+          <h2 class="title is-3">Hint Discriminative Advantages</h2>
+          <div class="item">
+            <div class="columns is-centered has-text-centered">
+              <div class="column is-fifth-fifths">
+                <!-- Your image here -->
+                <img src="static/images/Intro.png" alt="MY ALT TEXT" />
+                <h2 class="subtitle has-text-centered has-text-justified">
+                  <center>
+                    An example of the CIR task and HINT's main idea.
+                  </center>
+                </h2>
+              </div>
+            </div>
+          </div>
+          <br>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image carousel -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container  has-text-centered">
+        <h2 class="title is-3">HINT: dual-patH composItional coNtextualized
+          neTwork</h2>
+        <!-- <div id="results-carousel" class="carousel results-carousel"> -->
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/Framework.png" alt="MY ALT TEXT" />
+          <h2 class="subtitle has-text-centered">
+            HINT framework: (a) Dual Context Extraction, (b) Quantification of Contextual Relevance, (c) Dual-Path
+            Consistency
+            Constraints.
+          </h2>
+        </div>
+        <hr>
+        <!-- </div> -->
+      </div>
+    </div>
+  </section>
+  <!-- End image carousel -->
+
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h2 class="title is-3">Experiment</h2>
+        <!-- <div id="results-carousel" class="carousel results-carousel"> -->
+        <!-- 主表区域 -->
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/Maintable.png" alt="MY ALT TEXT" />
+          <h2 class="subtitle has-text-centered">
+            Performance comparison on FashionIQ and CIRR relative to R@k(%). The overall best results are in bold, while
+            the
+            second-best results are underlined. The Avg metric in CIRR denotes (R@5 + Rsubset@1) / 2.
+          </h2>
+        </div>
+        <!-- 实验图表区域 -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <div class="item">
+              <!-- Your image here -->
+              <img src="static/images/ablation.png" alt="MY ALT TEXT" />
+              <h2 class="subtitle has-text-centered">
+                Ablation study on FashionIQ and CIRR datasets. We compute Avg-R@10, Avg-R@50 for FashionIQ, and Avg
+                (mean of R@5
+                and Rsubset@1) for CIRR, respectively
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <div class="item">
+              <!-- Your image here -->
+              <img src="static/images/Case.png" alt="MY ALT TEXT" />
+              <h2 class="subtitle has-text-centered">
+                Case study on CIRR and FashionIQ.
+              </h2>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- 多栏，自行需要 -->
+        <!-- <div class="columns is-centered has-text-centered">
+
+          <div class="column is-6">
+            <img src="static/images/Attention_Fiq_Shoes.png" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+              Attention visualization on LRQ of ENCODER on FashionIQ and Shoes dataset. Three different examples showed
+              that different LRQ queries focus on different entity-action.
+            </h2>
+          </div>
+          <div class="column is-6">
+            <img src="static/images/Attention_cirr_200k.png" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+              Attention visualization on LRQ of ENCODER on CIRR and Fashion200K dataset. Three different examples showed
+              that different LRQ queries focus on different entity-action.Shoes
+            </h2>
+          </div>
+        </div> -->
+
+        <!-- </div> -->
+      </div>
+    </div>
+  </section>
+
+
+  <!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+        @article{zhang2026hint,
+          title={Hint: Composed image retrieval with dual-path compositional contextualized network},
+          author={Zhang, Mingyu and Li, Zixu and Chen, Zhiwei and Fu, Zhiheng and Zhu, Xiaowei and Nie, Jiajia and Wei, Yinwei and
+          Hu, Yupeng},
+          journal={arXiv preprint arXiv:2603.26341},
+          year={2026}
+        }
+      </code></pre>
+    </div>
+  </section>
+  <!--End BibTex citation -->
+  <!-- volume={x},
+number={x},
+pages={x--x}, -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-1">
+          <a href="https://mapmyvisitors.com/web/1c3qb" title="Visit tracker"><img
+              src="https://mapmyvisitors.com/map.png?d=RnDLEpfSR295uJMXai3b4tKHljZeHy3oijkO4GmKyfk&cl=ffffff"></a>
+        </div>
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the source code of this website, we just ask that you link back to this page in the
+              footer. <br> This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Statcounter tracking code -->
+
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+
+</body>
+
+</html>

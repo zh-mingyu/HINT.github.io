@@ -1,1 +1,1 @@
-# HINT.github.io
+# HINT Website
